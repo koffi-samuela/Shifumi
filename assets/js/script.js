@@ -418,3 +418,13 @@ function getScoreSaved() {
     roundComputerSaved = localStorage.getItem('roundcomputer')     
 }
 
+function clearLocalStorage() {
+    localStorage.removeItem('scoreUser');
+    localStorage.removeItem('scoreComputer');
+    localStorage.removeItem('roundUser');
+    localStorage.removeItem('roundComputer');
+}
+document.querySelector('.renitialize').addEventListener("click", ()=>{
+    clearLocalStorage()
+    location.reload()
+})
