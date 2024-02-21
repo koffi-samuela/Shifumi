@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ___________________________LINK_________________________________________________________________ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.2/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://kit.fontawesome.com/d23bb2aa48.js" crossorigin="anonymous"></script>
+    <!-- _________________________________________________________________________________________________ -->
+    <!-- _LINK CSS_ -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- ___ LINK JS______ -->
+    <script defer src="./assets/js/script.js"></script>
+    <title>SHIFUMI</title>
+</head>
+<body>
+    <video autoplay muted="false" id="myVideo"  preload="true"  >
+        <source src="./assets/videos/video_home.mp4" type="video/mp4">
+        <source src="./assets/videos/video_home.mp4" type="video/webm">
+      </video>
+      <h1>Welcome </h1>
+    <section id="TeamChoice"> 
+        <div id="TeamUser">
+                <!-- <h5>  Select your team </h5> -->
+                <div class="TeamUserElements">
+                    <div class="TeamUserElementcontent">
+                        <p> L.A lakers</p>
+                        <button type="button" class="lakers btn btn-outline-light" onclick="changeColor(this)"> <img src="./assets/images/logoImages/lakers2.png" alt=""  width="80px" height="80px"></button>
+                    </div>
+                    <div class="TeamUserElementcontent">
+                        <p> Milwaukee Bucks</p>
+                        <button class="bucks btn btn-outline-light" onclick="changeColor(this)"> <img src="./assets/images/logoImages/bucks_logo.png" alt=""  width="80px" height="80px"></button>
+                    </div>
+                    <div class="TeamUserElementcontent">
+                        <p> G.S Warriors</p>
+                        <button class="warriors btn btn-outline-light" onclick="changeColor(this)"> <img src="./assets/images/logoImages/GSW.png" alt=""  width="75px" height="80px"></button>
+                    </div>
+                </div>
+        </div>
+        <div class="choice">
+            <h5>  Select your team to left 
+                <!-- <iconify-icon icon="mdi:arrow-left-thin" style="color: white;" widht = "35"></iconify-icon> -->
+            </h5>
+            <button class="btn btn-outline-light text-center random-btn"> random choice for bot </button>
+            <div class="versus">
+                <p class="userChoice">choice user </p>
+                <p> <iconify-icon icon="fluent-emoji-flat:basketball" width="90px"></iconify-icon></p>
+                <p class="computerChoice">choice bot </p>
+            </div>
+        </div>
+        <div id="TeamComputer">
+            <div class="TeamComputerElements">
+                <!-- <h5>  Computer  team </h5> -->
+                <div class="TeamComputerElementcontent">
+                    <button class="bulls btn btn-outline-light"> <img src="./assets/images/logoImages/bulls_logo.png" alt=""  width="80px" height="80px"></button>
+                    <p> Chicago Bulls</p>
+                </div>
+                <div class="TeamComputerElementcontent">
+                    <button class="mavs btn btn-outline-light"> <img src="./assets/images/logoImages/mavs_logo.png" alt=""  width="80px" height="80px"></button>
+                    <p> Dallas Mavs</p>
+                </div>
+                <div class="TeamComputerElementcontent">
+                    <button class="clippers btn btn-outline-light"> <img src="./assets/images/logoImages/clippers_logo.png" alt=""  width="80px" height="80px"></button>
+                    <p> L.A clippers</p>
+                </div>
+            </div>
+    </div>
+</section>
+<div class="debut">
+
+    <button class="btn btn-outline text-center px-3 py-1.5 begin"><a href="./assets/html/Game.html" class="begin"> Commencer la partie</a> </button>
+</div>
+
+</body>
+</html>

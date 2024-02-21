@@ -1,0 +1,125 @@
+html 
+body{
+    background-image: url('../images/gameBoard/terrain.jpg');
+    /* background-image: url('../'); */
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    color: white;
+}
+main{
+    /* padding: 0.5vh;s */
+    background-color: rgb(0, 0, 0);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5vh;
+}
+header span {
+    font-size: 1.7rem;
+    font-weight: 550;
+    margin: 0 1.5vh;
+}
+header p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    border-bottom: 0.5px white solid;
+}
+#GameBoard{
+    margin: 5vh 0;
+}
+.GameboardContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.GameboardContent p{
+    font-size :1.3rem;
+    font-weight: bold;
+}
+.GameboardCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.GameboardCenter .texte, .GameboardCenter iconify-icon{
+    margin: 2vh 0;
+    text-align: center;
+}
+.btn{
+    background-color: rgba(255, 255, 255, 0.848);
+}
+.btn:hover{
+    background-color: orangered;
+}
+.action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5vh 1vh;
+}
+.action p, .action button{
+ margin: 0 1vh;
+}
+.posterRound {
+    margin: 3vh 0;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    text-align: center;
+}
+.posterRound span{
+    font-size: 2rem;
+}
+.win{
+    color: rgb(34, 255, 0);
+}
+.lose{
+    background-color: rgb(0, 0, 0);
+    padding: 2vh 2vw;
+    /* color: red; */
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+  }
+  
+  #overlay.show {
+    display: block;
+  }
+  
+  #overlay img {
+    max-width: 100%;
+    max-height: 100%;
+    /* min-width: 80%;
+    min-height: 60%; */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .viewTeamuser,.viewTeamComputer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin: 2vh 0;
+  }
+  .viewTeamuser p,.viewTeamComputer p{
+    font-size: 16px;
+  }

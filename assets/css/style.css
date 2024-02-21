@@ -1,0 +1,84 @@
+#TeamChoice{
+  height: fit-content;
+  z-index: 5;
+  color: white;
+}
+h1{
+  margin-bottom: 5vh;
+  color: white;
+  text-align: center;
+}
+#myVideo {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: brightness(55%);
+  }
+  #TeamChoice{
+    display: flex;
+    justify-content: space-around;
+    /* padding: 0 5vh; */
+    /* margin: 0 5vw; */
+    align-content: center;
+    align-items: center;
+  }
+  #TeamChoice p{
+    font-weight: bolder;
+    font-size :x-large;
+    /* margin: 0 3vh; */
+  }
+  .choice{
+    text-align: center;
+  }
+  .choice p ,  .choice button{
+    margin: 4vh 0;
+  }
+  h5{
+    text-align: center;
+    /* margin-bottom: 2vh; */
+    font-size :x-large;
+  }
+  .TeamUserElements, .TeamComputerElements{
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+  }
+  .TeamComputerElements{
+    align-items:start;
+
+  }
+  .TeamUserElementcontent, .TeamComputerElementcontent{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vh 0;
+  }
+  .TeamUserElementcontent p ,  .TeamUserElementcontent button, .TeamComputerElementcontent p, .TeamComputerElementcontent button {
+    margin: 0 1.2vh;
+
+  }
+  .begin{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  .btn{
+    border: 0.3px white solid;
+  }
+  .debut{
+    margin-top: 18vh;
+  }
+  .debut button a{
+    text-decoration: none;
+    color: white;
+  }
+  .debut button a:hover{
+    color: black;
+  }
+  .debut button:hover{
+    background-color: white;
+  }

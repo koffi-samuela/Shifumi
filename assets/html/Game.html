@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ___________________________LINK_________________________________________________________________ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.2/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://kit.fontawesome.com/d23bb2aa48.js" crossorigin="anonymous"></script>
+    <!-- _________________________________________________________________________________________________ -->
+    <!-- _LINK CSS_ -->
+    <link href="../css/Game.css" rel="stylesheet">
+    <!-- ___ LINK JS______ -->
+    <script defer src="../js/script.js"></script>
+    <title>Partie</title>
+</head>
+<body>
+    <div id="overlay">
+        <img src="../images/Kobe-LeBron-All-Star-2016.jpg" alt="Mon image">
+      </div>
+      <!-- <button id="show-image-button">Afficher l'image</button> -->
+      
+      
+    <main>
+        <header class="head">
+            <div class="navLeft">
+                <a href="/index.html">Home</a>
+            </div>
+            <div class="navCenter py-1">
+                <p>user score <span class="scoreUser">0</span>  -  <span class="scoreComputer">0</span> Bot score</p>
+            </div>
+            <div class="navRight">
+                <a href="./rules.html">Règles</a>
+            </div>
+        </header>
+    </main>
+    <section id="GameBoard">
+        <div class="GameboardContent">
+                <div class="GameboardLeft">
+                    <div class="viewTeamuser">
+                        <!-- <h4> Choisissez une action</h4> -->
+                        <p> team user </p>
+                        <img src="../images/logoImages/bulls_logo.png" alt=""  width="70px" height="70px" class="team_user_img">
+                    </div>
+                        <div class="user-Cross action">
+                                <p> Crossover</p>
+                                <button class="btn-Cross btn"> <img src="../images/gameBoard/cross_action.png" alt=""  width="65px" height="55px"></button>
+                        </div>
+                        <div class="user-dunk action">
+                                <p> Dunk</p>
+                                <button class="btn-dunk btn"> <img src="../images//gameBoard/dunk_action3.png" alt=""  width="65px" height="55px"></button>                    
+                        </div>
+                        <div class="user-block action">
+                                <p> block</p>
+                                <button class="btn-block btn"> <img src="../images/gameBoard/contre_action.png" alt=""  width="65px" height="55px"></button>                    
+                        </div>
+                    
+               </div>
+                <div class="GameboardCenter">
+                    <div class="texte">
+                        <span>Choix du jouer :</span>
+                        <h4 class="playerChoice"> Player Choice</h4>
+                    </div>
+                    <iconify-icon icon="noto:basketball" width="85"></iconify-icon>
+                    <div class="texte">
+                        <span>Choix du bot : </span>
+                        <h4 class="computerChoice">Computer Choice</h4>
+                    </div>
+                </div>
+                <div class="GameboardRight">
+                    <div class="viewTeamComputer">
+                        <!-- <h4> Choisissez une action</h4> -->
+                        <p> team computer </p>        
+                        <img src="../images/logoImages/bulls_logo.png" alt=""  width="70px" height="70px" class="team_computer_img" >
+                    </div>
+                    <div class="computer-Cross action">
+                            <p> Crossover</p>
+                            <button class="btn-Cross btn"> <img src="../images/gameBoard/cross_action.png" alt=""  width="65px" height="55px"></button>
+                    </div>
+                    <div class="computer-dunk action">
+                            <p> Dunk</p>
+                            <button class="btn-dunk btn"> <img src="../images//gameBoard/dunk_action3.png" alt=""  width="65px" height="55px"></button>                    
+                    </div>
+                    <div class="computer-block action">
+                            <p> Block</p>
+                            <button class="btn-Contre btn"> <img src="../images/gameBoard/contre_action.png" alt=""  width="65px" height="55px"></button>                    
+                    </div>                
+                </div>
+            
+        </div>
+        <div class="posterRound">
+            <div class="posterRoundContent">
+                <h4> Manche</h4>
+                <p><span class="roundUser">0</span> - <span class="roundComputer">0</span> </p>
+                <strong class="result-round lose"> résultat des manches</strong>
+            </div>
+        </div>
+    </section>
+    <button class="btn btn-outline-light text-center px-3 py-1.5 random-btn d-none"> random choice for bot </button>
+    
+</body>
+</html>
