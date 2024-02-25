@@ -336,6 +336,7 @@ function checkResult() {
         poster_score_User.textContent = scoreUser
         poster_score_Computer.textContent = scoreComputer
         poster_UserRound.textContent = roundUser
+        
     } else if(scoreComputer == 5) {
         // utilisation des variables temporaires
         scoreComputer = 0
